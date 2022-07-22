@@ -12,7 +12,7 @@ cards.forEach((card) => {
 
 function end() {
 
-
+if(count>24){
   let displayWinner = document.querySelector(".container");
   displayWinner.innerHTML = "";
   let txt = document.createTextNode(`Number of Moves: ${count}`);
@@ -29,6 +29,16 @@ function end() {
   p2.classList.add("display-4");
   displayWinner.appendChild(p1);
   displayWinner.appendChild(p2);
+
+}
+
+else{
+  let disp = document.querySelector(".gameContainer");
+  disp.innerHTML="";
+  let img = document.createElement("img");
+  img.src = "img/g.jpg";
+  disp.appendChild(img);
+}
 
 
 }
@@ -97,11 +107,4 @@ function flip(element) {
 
   });
 }
-
-
-
-
-
-
-
 
