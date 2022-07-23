@@ -12,7 +12,7 @@ cards.forEach((card) => {
 
 function end() {
 
-if(count>24){
+if(count>28){
   let displayWinner = document.querySelector(".container");
   displayWinner.innerHTML = "";
   let txt = document.createTextNode(`Number of Moves: ${count}`);
