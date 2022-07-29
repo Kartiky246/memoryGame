@@ -36,7 +36,7 @@ else{
   let disp = document.querySelector(".gameContainer");
   disp.innerHTML="";
   let img = document.createElement("img");
-  img.src = "img/g.jpg";
+  img.src = "img/winner.webp";
   disp.appendChild(img);
 }
 
